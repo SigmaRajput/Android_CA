@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    tools:context=".ques_2_set_a">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/App_Name"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:text="SHAADI HO!!"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"/>
+
+    <EditText
+        android:id="@+id/Name_Feild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/App_Name"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/second_question"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:padding="10sp"
+        android:textColor="#ff0000"
+        android:textStyle="italic" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name_Feild"
+        android:id="@+id/Phone_Feild"
+        android:inputType="phone"
+        android:textColor="#ff0000"
+        android:hint="Phone Number"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:padding="10sp"
+        android:background="@drawable/second_question"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Radio_main"
+        android:layout_below="@id/Phone_Feild"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical"
+        android:background="@drawable/second_question">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="What is Your Gender?"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Male_radio"
+            android:layout_margin="5sp"
+            android:text="Male"
+            android:textStyle="italic|bold"
+            android:textColor="#C70700"
+            android:buttonTint="#D22B2B"
+            android:shadowRadius="5"
+            android:background="@drawable/second_question"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Female_radio"
+            android:text="Female"
+            android:textStyle="italic|bold"
+            android:textColor="#C70700"
+            android:layout_margin="5sp"
+            android:buttonTint="#D22B2B"
+            android:shadowRadius="5"
+            android:background="@drawable/second_question"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:id="@+id/Trans_radio"
+            android:text="Transgender"
+            android:textStyle="italic|bold"
+            android:textColor="#C70700"
+            android:buttonTint="#D22B2B"
+            android:shadowRadius="5"
+            android:background="@drawable/second_question"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:layout_below="@id/Radio_main"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:shadowColor="#ff0000"
+        android:buttonTint="#ff0000"
+        android:text="I am Unmarried"
+        android:textColor="#ff0000"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:background="@drawable/second_question"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#ff0000"
+        android:buttonTint="#ff0000"
+        android:background="@drawable/second_question"
+        android:text="I am a Government Employee"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/second_question"
+        android:backgroundTint="#ff0000"
+        android:fontFamily="@font/mainfont"
+        android:text="Find Match"
+        android:textColor="#ffff00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+    </ScrollView>
